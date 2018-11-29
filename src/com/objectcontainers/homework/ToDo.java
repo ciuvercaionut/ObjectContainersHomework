@@ -4,17 +4,18 @@ import java.util.*;
 
 public class ToDo {
 
-    public void orderByNameAndAge() {
 
-        List<Person> people = new ArrayList<>();
+    public void orderByNameAndAge(List<Person> people) {
+
+
+       /* List<Person> people = new ArrayList<>();
 
         people.add(new Employed("John", 24, "1234"));
         people.add(new Employed("Anne", 26, "2236"));
         people.add(new Unemployed("Bryan", 31, "1331"));
         people.add(new Student("Mary", 20, "2220"));
         people.add(new Unemployed("Chris", 25, "1335"));
-        people.add(new Student("Sarah", 22, "2222"));
-
+        people.add(new Student("Sarah", 22, "2222"));*/
 
         System.out.println("List of peope before ordering: ");
         System.out.println(people);
@@ -35,16 +36,17 @@ public class ToDo {
         System.out.println(byAge);
     }
 
-    void printHobbiesAndWhere() {
+    void printHobbiesAndWhere( List<Person> people) {
 
-        List<Person> people = new ArrayList<>();
 
-        people.add(new Employed("John", 24, "1234"));
-        people.add(new Employed("Anne", 26, "2236"));
-        people.add(new Unemployed("Bryan", 31, "1331"));
-        people.add(new Student("Mary", 20, "2220"));
-        people.add(new Unemployed("Chris", 25, "1335"));
-        people.add(new Student("Sarah", 22, "2222"));
+//        List<Person> people = new ArrayList<>();
+//
+//        people.add(new Employed("John", 24, "1234"));
+//        people.add(new Employed("Anne", 26, "2236"));
+//        people.add(new Unemployed("Bryan", 31, "1331"));
+//        people.add(new Student("Mary", 20, "2220"));
+//        people.add(new Unemployed("Chris", 25, "1335"));
+//        people.add(new Student("Sarah", 22, "2222"));
 
         Address a1 = new Address("Romania", "Cluj", "Somesului", 3);
         Address a2 = new Address("Hungary", "Budapest", "Andrassy", 42);
@@ -66,6 +68,7 @@ public class ToDo {
 
         hobbiesAndCountries.put(person, hobbies);
 
+        System.out.println("\n...........");
         System.out.println("\n" + person.getName() + " can practice : ");
         for (Hobby h : hobbies) {
             System.out.println("\n" + h.getNameofHobby() + " in:");
@@ -74,5 +77,5 @@ public class ToDo {
             }
             System.out.println();
         }
-    }
+   }
 }
